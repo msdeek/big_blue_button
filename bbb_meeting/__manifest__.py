@@ -46,4 +46,8 @@
     'demo': [
         'demo/demo.xml',
     ],
+    "application": True,
+    "installable": True,
+    "price": 20.0,
+    "currency": "EUR",
 }
