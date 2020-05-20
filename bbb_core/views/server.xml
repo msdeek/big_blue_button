@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="server_form_view" model="ir.ui.view">
+            <field name="name">bbb_servers.server.form</field>
+            <field name="model">bbb_servers.server</field>
+            <field name="arch" type="xml">
+                <form string="BigBlueButton Servers">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="Server Name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="bbb_server_url"/>
+                                <field name="bbb_server_secret"/>
+                            </group>
+                            <group>
+                                <!--<field name="example_field"/>-->
+                                <field name="bbb_api_ver"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="server_tree_view" model="ir.ui.view">
+            <field name="name">server.tree</field>
+            <field name="model">bbb_servers.server</field>
+            <field name="arch" type="xml">
+                <tree string="BigBlueButton Servers">
+                    <field name="name"/>
+                    <field name="bbb_server_url"/>
+                </tree>
+            </field>
+        </record>
+
+
+     <act_window id="bbb_servers_server_act_window"
+                name="BBB Server"
+                res_model="bbb_servers.server"
+                view_mode="tree,form"
+    />
+
+        <menuitem name="BigBlueButton Servers" id="bbb_servers_server_menu" action="bbb_servers_server_act_window"/>
+
+</odoo>
