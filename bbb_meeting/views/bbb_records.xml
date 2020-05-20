@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="bbb_recording_form_view" model="ir.ui.view">
+            <field name="name">bbb_meeting_bbb_recording.form</field>
+            <field name="model">bbb.recording</field>
+            <field name="arch" type="xml">
+                <form string="Records">
+                    <sheet>
+
+                        <group>
+                            <group>
+                                <field name="recordID"/>
+                            </group>
+                            <group>
+                                <field name="url" widget="url"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="bbb_recording_tree_view" model="ir.ui.view">
+            <field name="name">bbb_meeting_bbb_recording.tree</field>
+            <field name="model">bbb.recording</field>
+            <field name="arch" type="xml">
+                <tree string="Records">
+                    <field name="recordID"/>
+                    <field name="url" widget="url"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+
+    </data>
+</odoo>

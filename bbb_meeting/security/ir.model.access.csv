@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bbb_servers,BigBlueButton,model_bbb_servers,base.group_user,1,1,1,1
+access_bbb_recording,BigBlueButton Recording,model_bbb_recording,base.group_user,1,1,1,1

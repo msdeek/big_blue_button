@@ -1,0 +1,54 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="bbb_servers_list">
+      <field name="name">BigBlueButton Servers</field>
+      <field name="model">bbb.servers</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="bbb_api_ver"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="bbb_servers_form" model="ir.ui.view">
+        <field name="name">BigBlueButton Server</field>
+        <field name="model">bbb.servers</field>
+        <field name="arch" type="xml">
+            <form string="BigBlueButton Server">
+                <sheet>
+                  <div class="oe_title">
+                    <label for="name"/>
+                    <h1>
+                      <field name="name" placeholder="Server Name"/>
+                    </h1>
+                  </div>
+                    <group>
+                      <group>
+                        <field name="bbb_server_url"/>
+                        <field name="bbb_server_secret"/>
+                      </group>
+                      <group>
+                        <field name="bbb_api_ver"/>
+                      </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="bbb_server_act_widow">
+      <field name="name">BigBlueButton Servers Action</field>
+      <field name="res_model">bbb.servers</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem name="BigBlueButton Servers" id="bbb_server_menu" parent="base.menu_ir_property" action="bbb_server_act_widow"/>
+
+
+  </data>
+</odoo>
