@@ -14,7 +14,7 @@
 # If not, see <https://codefish.com.eg/>
 #################################################################################
 {
-    'name': "BigBlueButton Meeting",
+    'name': "BigBlueButton Online Meeting",
 
     'summary': """
         Engage Your Online Partners, BigBlueButton Meeting Module is a 
