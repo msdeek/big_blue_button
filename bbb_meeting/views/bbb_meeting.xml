@@ -68,7 +68,7 @@
                 </page>
             </xpath>
             <xpath expr="//field[@name='recurrency']" position="after">
-                <field name="is_online"/>
+                <field name="is_online" string="bbb Online Meeting"/>
                 <field name="bbb_meeting_create" invisible="1"/>
                 <field name="bbb_meeting_id" attrs="{'invisible': [('is_online', '=', False)]}"/>
                 <field name="bbb_server"
