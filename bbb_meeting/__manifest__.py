@@ -29,7 +29,7 @@
 
 
     'category': 'Tools',
-    'version': '13.0.1',
+    'version': '13.0.2',
     'images': ['static/description/banner.gif'],
 
     # any module necessary for this one to work correctly
