@@ -48,6 +48,6 @@
     ],
     "application": True,
     "installable": True,
-    "price": 2.0,
+    "price": 100.0,
     "currency": "EUR",
 }
